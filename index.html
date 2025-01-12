@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Recharge</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assests/css/style.css">
+</head>
+
+
+<body>
+
+    <section id="Recharge" style=" height: 100vh; display: flex; justify-content: center; align-items: center;">
+
+        <div class="container">
+
+            <div class="row gy-3 justify-content-center align-items-center">
+                <div class="col-md-4">
+                    <div class="d-block">
+                        <div class="modal-dialog modal-dialog-centered rounded ">
+                            <div class="modal-content   p-3 rounded shadow  ">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Mobile Recharge</h1>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="d-flex justify-content-start gap-3 my-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Prepaid
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Postpaid
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <form action="">
+                                        <div class="mb-3 number-group ">
+                                            <label for="mobilenumber" class="form-label>">Mobile Number
+                                                <sup>*</sup></label>
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control mobileNumber" id="mobilenumber"
+                                                    placeholder="">
+                                                <p id="appendIndianCountryCodeOneTime" class="countryCode"
+                                                    style="color:grey;">
+                                                    +91</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="Operator" class="form-label>">Select Operator
+                                                <sup>*</sup></label>
+                                            <div class="dropdown position-relative">
+                                                <div class="input-group">
+                                                    <span class="input-group-text">
+                                                        <img id="selectedOperatorLogo" src="assests/images/jio.png"
+                                                            alt="Operator Logo" class="img-fluid operatorLogo " />
+                                                    </span>
+                                                    <input type="text" class="form-control" id="Operator"
+                                                        placeholder="Jio Maharastra & Goa" readonly />
+                                                </div>
+
+                                                <ul class="dropdown-menu shadow customdropdown" id="dropdownMenu">
+                                                    <li>
+                                                        <a class="dropdown-item" href="#"
+                                                            data-value="Jio Maharastra & Goa"
+                                                            data-logo="assests/images/jio.png">
+                                                            <img src="assests/images/jio.png"
+                                                                class="img-fluid operatorLogo" />
+                                                            Jio
+                                                            Maharastra & Goa
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#" data-value="Airtel Delhi"
+                                                            data-logo="assests/images/airtelLogo.png">
+                                                            <img src="assests/images/airtelLogo.png" alt=""
+                                                                class="img-fluid operatorLogo" />Airtel Delhi
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#" data-value="Vodafone Mumbai"
+                                                            data-logo="assests/images/Vodafone_Idea_logo.svg.png">
+                                                            <img src="assests/images/Vodafone_Idea_logo.svg.png"
+                                                                class="img-fluid operatorLogo" /> Vodafone Mumbai
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#" data-value="BSNL Kerala"
+                                                            data-logo="assests/images/bsnl.png">
+                                                            <img src="assests/images/bsnl.png" alt=""
+                                                                class="img-fluid operatorLogo" />BSNL Kerala
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="amount" class="form-label>">Recharge Amount <sup>*</sup></label>
+                                            <input type="text" class="form-control" id="amount" maxlength="7"
+                                                placeholder="Enter Mobile Number">
+
+                                        </div>
+
+
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">PAY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-8">
+                    <div class="d-block">
+                        <div class="modal-dialog modal-dialog-centered rounded ">
+                            <div class="modal-content   p-3 rounded shadow  ">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Choose a plan</h1>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="nav nav-underline packspills my-3">
+                                        <li class="nav-item">
+                                            <a class="nav-link active " aria-current="page"
+                                                href="#RecommedPack">Recommeded
+                                                Packs</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#t2opack">T20 Packs</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#truelyunlimited">Truely Unlimited</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#data">Data</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#talktime">Talktime (Top up Voucher)</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link " href="#otherpack" >Other Packs</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link " href="#internationalRoaming">International Roaming</a>
+                                        </li>
+                                    </ul>
+                                    <div class="PackDetails">
+                                        <div id="RecommedPack" class="packbox">
+                                            <div class="card mb-3 p-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="">
+                                                        Validity:<span class="a-letter-space"></span>28 Days<br>
+
+                                                    </div>
+                                                    <div class="">
+                                                        <span class="choose-plan-button">
+                                                            <strong>₹ 199 </strong>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class=" mt-3">
+                                                        <div class="details">
+                                                            <p style="color:#808080">Data: 2GB | Calls: Unlimited local,
+                                                                STD &amp; Roaming | Validity: 28 Days | SMS: 100 SMS/day
+                                                                | Additional Benefit(s): Watch free TV shows, Movies,
+                                                                Live channels and much more [Download Airtel Xstream app
+                                                                to enjoy free content (premium subscription not
+                                                                included)], India’s 1st Spam Fighting Network [Get a
+                                                                Suspected Spam alert on your phone for incoming Spam
+                                                                Calls and SMS], Free hellotunes for you [Set any one
+                                                                tune per month for Free] </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-3 p-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="">
+                                                        Validity:<span class="a-letter-space"></span>28 Days<br>
+
+                                                    </div>
+                                                    <div class="">
+                                                        <span class="choose-plan-button">
+                                                            <strong>₹ 199 </strong>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class=" mt-3">
+                                                        <div class="details">
+                                                            <p style="color:#808080">Data: 2GB | Calls: Unlimited local,
+                                                                STD &amp; Roaming | Validity: 28 Days | SMS: 100 SMS/day
+                                                                | Additional Benefit(s): Watch free TV shows, Movies,
+                                                                Live channels and much more [Download Airtel Xstream app
+                                                                to enjoy free content (premium subscription not
+                                                                included)], India’s 1st Spam Fighting Network [Get a
+                                                                Suspected Spam alert on your phone for incoming Spam
+                                                                Calls and SMS], Free hellotunes for you [Set any one
+                                                                tune per month for Free] </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-3 p-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="">
+                                                        Validity:<span class="a-letter-space"></span>28 Days<br>
+
+                                                    </div>
+                                                    <div class="">
+                                                        <span class="choose-plan-button">
+                                                            <strong>₹ 199 </strong>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="">
+                                                        <div class="details">
+                                                            <p style="color:#808080">Data: 2GB | Calls: Unlimited local,
+                                                                STD &amp; Roaming | Validity: 28 Days | SMS: 100 SMS/day
+                                                                | Additional Benefit(s): Watch free TV shows, Movies,
+                                                                Live channels and much more [Download Airtel Xstream app
+                                                                to enjoy free content (premium subscription not
+                                                                included)], India’s 1st Spam Fighting Network [Get a
+                                                                Suspected Spam alert on your phone for incoming Spam
+                                                                Calls and SMS], Free hellotunes for you [Set any one
+                                                                tune per month for Free] </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+
+
+                                        </div>
+                                        <div id="t2opack" class="packbox" style="display: none;">
+                                            <div class="card mb-3 p-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="">
+                                                        Validity:<span class="a-letter-space"></span>30 Days<br>
+
+                                                    </div>
+                                                    <div class="">
+                                                        <span class="choose-plan-button">
+                                                            <strong>₹ 199 </strong>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class=" mt-3">
+                                                        <div class="details">
+                                                            <p style="color:#808080">Data: 2GB | Calls: Unlimited local,
+                                                                STD &amp; Roaming | Validity: 28 Days | SMS: 100 SMS/day
+                                                                | Additional Benefit(s): Watch free TV shows, Movies,
+                                                                Live channels and much more [Download Airtel Xstream app
+                                                                to enjoy free content (premium subscription not
+                                                                included)], India’s 1st Spam Fighting Network [Get a
+                                                                Suspected Spam alert on your phone for incoming Spam
+                                                                Calls and SMS], Free hellotunes for you [Set any one
+                                                                tune per month for Free] </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-3 p-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="">
+                                                        Validity:<span class="a-letter-space"></span>22 Days<br>
+
+                                                    </div>
+                                                    <div class="">
+                                                        <span class="choose-plan-button">
+                                                            <strong>₹ 199 </strong>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class=" mt-3">
+                                                        <div class="details">
+                                                            <p style="color:#808080">Data: 2GB | Calls: Unlimited local,
+                                                                STD &amp; Roaming | Validity: 28 Days | SMS: 100 SMS/day
+                                                                | Additional Benefit(s): Watch free TV shows, Movies,
+                                                                Live channels and much more [Download Airtel Xstream app
+                                                                to enjoy free content (premium subscription not
+                                                                included)], India’s 1st Spam Fighting Network [Get a
+                                                                Suspected Spam alert on your phone for incoming Spam
+                                                                Calls and SMS], Free hellotunes for you [Set any one
+                                                                tune per month for Free] </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-3 p-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="">
+                                                        Validity:<span class="a-letter-space"></span>18 Days<br>
+
+                                                    </div>
+                                                    <div class="">
+                                                        <span class="choose-plan-button">
+                                                            <strong>₹ 199 </strong>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="">
+                                                        <div class="details">
+                                                            <p style="color:#808080">Data: 2GB | Calls: Unlimited local,
+                                                                STD &amp; Roaming | Validity: 28 Days | SMS: 100 SMS/day
+                                                                | Additional Benefit(s): Watch free TV shows, Movies,
+                                                                Live channels and much more [Download Airtel Xstream app
+                                                                to enjoy free content (premium subscription not
+                                                                included)], India’s 1st Spam Fighting Network [Get a
+                                                                Suspected Spam alert on your phone for incoming Spam
+                                                                Calls and SMS], Free hellotunes for you [Set any one
+                                                                tune per month for Free] </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+
+
+                                        </div>
+                                        <div id="truelyunlimited" class="packbox" style="display: none;">
+                                            <div class="card mb-3 p-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="">
+                                                        Validity:<span class="a-letter-space"></span>30 Days<br>
+
+                                                    </div>
+                                                    <div class="">
+                                                        <span class="choose-plan-button">
+                                                            <strong>₹ 199 </strong>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class=" mt-3">
+                                                        <div class="details">
+                                                            <p style="color:#808080">Data: 2GB | Calls: Unlimited local,
+                                                                STD &amp; Roaming | Validity: 28 Days | SMS: 100 SMS/day
+                                                                | Additional Benefit(s): Watch free TV shows, Movies,
+                                                                Live channels and much more [Download Airtel Xstream app
+                                                                to enjoy free content (premium subscription not
+                                                                included)], India’s 1st Spam Fighting Network [Get a
+                                                                Suspected Spam alert on your phone for incoming Spam
+                                                                Calls and SMS], Free hellotunes for you [Set any one
+                                                                tune per month for Free] </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-3 p-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="">
+                                                        Validity:<span class="a-letter-space"></span>22 Days<br>
+
+                                                    </div>
+                                                    <div class="">
+                                                        <span class="choose-plan-button">
+                                                            <strong>₹ 199 </strong>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class=" mt-3">
+                                                        <div class="details">
+                                                            <p style="color:#808080">Data: 2GB | Calls: Unlimited local,
+                                                                STD &amp; Roaming | Validity: 28 Days | SMS: 100 SMS/day
+                                                                | Additional Benefit(s): Watch free TV shows, Movies,
+                                                                Live channels and much more [Download Airtel Xstream app
+                                                                to enjoy free content (premium subscription not
+                                                                included)], India’s 1st Spam Fighting Network [Get a
+                                                                Suspected Spam alert on your phone for incoming Spam
+                                                                Calls and SMS], Free hellotunes for you [Set any one
+                                                                tune per month for Free] </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-3 p-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="">
+                                                        Validity:<span class="a-letter-space"></span>18 Days<br>
+
+                                                    </div>
+                                                    <div class="">
+                                                        <span class="choose-plan-button">
+                                                            <strong>₹ 199 </strong>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="">
+                                                        <div class="details">
+                                                            <p style="color:#808080">Data: 2GB | Calls: Unlimited local,
+                                                                STD &amp; Roaming | Validity: 28 Days | SMS: 100 SMS/day
+                                                                | Additional Benefit(s): Watch free TV shows, Movies,
+                                                                Live channels and much more [Download Airtel Xstream app
+                                                                to enjoy free content (premium subscription not
+                                                                included)], India’s 1st Spam Fighting Network [Get a
+                                                                Suspected Spam alert on your phone for incoming Spam
+                                                                Calls and SMS], Free hellotunes for you [Set any one
+                                                                tune per month for Free] </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+
+
+                                        </div>
+                                        <div id="data" class="packbox" style="display: none;">
+                                            <div class="card mb-3 p-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="">
+                                                        Validity:<span class="a-letter-space"></span>30 Days<br>
+
+                                                    </div>
+                                                    <div class="">
+                                                        <span class="choose-plan-button">
+                                                            <strong>₹ 199 </strong>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class=" mt-3">
+                                                        <div class="details">
+                                                            <p style="color:#808080">Data: 2GB | Calls: Unlimited local,
+                                                                STD &amp; Roaming | Validity: 28 Days | SMS: 100 SMS/day
+                                                                | Additional Benefit(s): Watch free TV shows, Movies,
+                                                                Live channels and much more [Download Airtel Xstream app
+                                                                to enjoy free content (premium subscription not
+                                                                included)], India’s 1st Spam Fighting Network [Get a
+                                                                Suspected Spam alert on your phone for incoming Spam
+                                                                Calls and SMS], Free hellotunes for you [Set any one
+                                                                tune per month for Free] </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-3 p-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="">
+                                                        Validity:<span class="a-letter-space"></span>22 Days<br>
+
+                                                    </div>
+                                                    <div class="">
+                                                        <span class="choose-plan-button">
+                                                            <strong>₹ 199 </strong>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class=" mt-3">
+                                                        <div class="details">
+                                                            <p style="color:#808080">Data: 2GB | Calls: Unlimited local,
+                                                                STD &amp; Roaming | Validity: 28 Days | SMS: 100 SMS/day
+                                                                | Additional Benefit(s): Watch free TV shows, Movies,
+                                                                Live channels and much more [Download Airtel Xstream app
+                                                                to enjoy free content (premium subscription not
+                                                                included)], India’s 1st Spam Fighting Network [Get a
+                                                                Suspected Spam alert on your phone for incoming Spam
+                                                                Calls and SMS], Free hellotunes for you [Set any one
+                                                                tune per month for Free] </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-3 p-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="">
+                                                        Validity:<span class="a-letter-space"></span>18 Days<br>
+
+                                                    </div>
+                                                    <div class="">
+                                                        <span class="choose-plan-button">
+                                                            <strong>₹ 199 </strong>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="">
+                                                        <div class="details">
+                                                            <p style="color:#808080">Data: 2GB | Calls: Unlimited local,
+                                                                STD &amp; Roaming | Validity: 28 Days | SMS: 100 SMS/day
+                                                                | Additional Benefit(s): Watch free TV shows, Movies,
+                                                                Live channels and much more [Download Airtel Xstream app
+                                                                to enjoy free content (premium subscription not
+                                                                included)], India’s 1st Spam Fighting Network [Get a
+                                                                Suspected Spam alert on your phone for incoming Spam
+                                                                Calls and SMS], Free hellotunes for you [Set any one
+                                                                tune per month for Free] </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+
+
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+                                <!-- <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">PAY</button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="assests/js/operator.js"></script>
+    <script src="assests/js/packDetailsTabs.js"></script>
+
+
+</body>
+
+</html>

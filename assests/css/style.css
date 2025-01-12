@@ -1,0 +1,245 @@
+:root {
+    --primary-color: #0a4bff;
+    --para-color: #0042A6;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: #eff8ff;
+}
+
+
+
+.countryCode {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+
+#mobilenumber {
+    padding-left: 40px;
+}
+
+
+
+label {
+    margin-bottom: 5px;
+}
+
+.edit {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: grey;
+    z-index: 999;
+    cursor: pointer;
+
+}
+
+/* .active {
+    background-color: #195a12;
+    color: white;
+
+} */
+
+.nav-pills .nav-link {
+    color: black;
+    border-radius: 5px;
+  white-space: nowrap;
+
+}
+
+.custom-dropdown {
+    position: relative;
+}
+
+.custom-dropdown input {
+    cursor: pointer;
+}
+
+.operatorLogo {
+    max-width: 30px;
+}
+
+.customdropdown a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 10px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.form-control {
+    padding-block: 13px 10px;
+}
+
+sup {
+    font-size: 17px;
+    position: relative;
+    top: 1px;
+    color: red;
+}
+
+.packspills {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 30px;
+    align-items: center;
+
+}
+
+.packspills::-webkit-scrollbar {
+    display: none;
+}
+
+.packspills a {
+    color: black;
+}
+
+.choose-plan-button {
+    border-radius: 50px;
+    background-color: 0 0;
+    border: 1px solid #d4d1d1;
+    padding-inline: 15px;
+    font-size: 14px;
+}
+
+.details p {
+    font-size: 14px;
+}
+
+.packbox {
+    height: 400px;
+    overflow-y: auto;
+}
+
+.sub-heading {
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+
+
+.heading {
+    color: var(--para-color);
+    line-height: 53px;
+    padding: 30px 0;
+    font-weight: 600;
+    font-size: 46px;
+
+}
+
+.topcontent {
+    line-height: 36px;
+    margin-top: -7px;
+    font-size: 24px;
+}
+
+.formHeading {
+    font-size: 28px;
+
+    line-height: 45px;
+    color: var(--para-color);
+    font-weight: 600;
+}
+
+.formsection {
+    position: relative;
+    z-index: 2;
+    border-radius: 20px;
+    padding: 40px 50px 35px;
+    background-color: white;
+}
+
+.paybtn {
+    padding-block: 13px;
+    margin-top: 5px;
+}
+
+.plansbtn {
+    position: absolute;
+    top: 10px;
+    right: 9px;
+    border: 1px solid #0073cf;
+    width: auto;
+    border-radius: 4px;
+    padding: 8px;
+    line-height: 12px;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 10px; 
+
+}
+.categories a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+.categories a  img{
+       max-width: 35px;    
+}
+
+.show{
+    transition: all 0.5s ease;
+}
+
+ .customwidth{
+    width: 850px !important;
+    right: 0;
+    border-bottom-left-radius: 24px;
+    background: linear-gradient(137deg, #0042A6, rgba(67, 116, 191, .95));
+    border-top-left-radius: 24px;
+    color: white;
+}
+
+.nav-item button{
+    width: 95%;
+}
+table button{
+    white-space: nowrap;
+}
+.btn-close{
+    background-image: url("/assests/images/close.svg") !important;
+    font-size: xx-large;
+}
+table{
+    text-align: center;
+    cursor: pointer;
+}
+td{
+    vertical-align: middle;
+
+}
+
+.nav-pills .nav-link{
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.searchbtn{
+    position: absolute;
+    top: 55%;
+    right: 8px;
+    transform: translateY(-52%);
+    color: #000;
+}
