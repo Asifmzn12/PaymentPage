@@ -53,7 +53,8 @@ label {
 .nav-pills .nav-link {
     color: black;
     border-radius: 5px;
-  white-space: nowrap;
+    white-space: nowrap;
+    align-items: center;
 
 }
 
@@ -98,6 +99,7 @@ sup {
     white-space: nowrap;
     gap: 30px;
     align-items: center;
+    justify-content: center;
 
 }
 
@@ -184,26 +186,28 @@ sup {
     text-decoration: none;
     color: var(--primary-color);
     cursor: pointer;
-    font-size: 10px; 
+    font-size: 10px;
 
 }
-.categories a{
+
+.categories a {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    
-}
-.categories a  img{
-       max-width: 35px;    
+
 }
 
-.show{
+.categories a img {
+    max-width: 35px;
+}
+
+.show {
     transition: all 0.5s ease;
 }
 
- .customwidth{
+.customwidth {
     width: 850px !important;
     right: 0;
     border-bottom-left-radius: 24px;
@@ -212,34 +216,170 @@ sup {
     color: white;
 }
 
-.nav-item button{
+.nav-item button {
     width: 95%;
 }
-table button{
+
+table button {
     white-space: nowrap;
 }
-.btn-close{
+
+.offcanvas .btn-close {
     background-image: url("/assests/images/close.svg") !important;
     font-size: xx-large;
 }
-table{
+
+table {
     text-align: center;
     cursor: pointer;
 }
-td{
+
+td {
     vertical-align: middle;
 
 }
 
-.nav-pills .nav-link{
+.nav-pills .nav-link {
     padding: 15px;
     border-radius: 8px;
     font-size: 16px;
 }
-.searchbtn{
+
+.searchbtn {
     position: absolute;
     top: 55%;
     right: 8px;
     transform: translateY(-52%);
     color: #000;
+}
+
+.offerBox p {
+    margin-bottom: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #000;
+}
+
+.offerBox {
+    background-color: #f5f5f5;
+    padding: 12px;
+    border-radius: 10px;
+    min-width: 135px;
+    cursor: pointer;
+  
+}
+.offers {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+}
+
+
+.offers::-webkit-scrollbar {
+  display: none;
+}
+
+.Recharge_details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    /* border-bottom: 1px solid rgb(200, 198, 198); */
+}
+
+.Recharge_Confirmation_modal p{
+    margin-bottom: 5px;
+}
+
+.Recharge_Confirmation_modal .modal-body {
+    max-height: 500px;
+    overflow-y: scroll;
+  }
+  
+  .Recharge_Confirmation_modal .modal-body::-webkit-scrollbar {
+    width: 5px; 
+  }
+  
+  .Recharge_Confirmation_modal .modal-body::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  .Recharge_Confirmation_modal .modal-body::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px; 
+  }
+  
+  .Recharge_Confirmation_modal .modal-body::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+.total{
+    background: #dde1e4;
+    color: black;
+    padding: 15px 8px;
+    border-radius: 8px;
+}
+#confirmRechargeLabel{
+    color: var(--para-color);
+    font-weight: 600;
+}
+
+.applycode{
+    min-width: 150px;
+    border: none;
+    outline: none;
+}
+
+
+@media (max-width:768px){
+    .formsection{
+        padding-inline: 10px;
+    }
+    .heading{
+        font-size: 26px;
+        line-height: 36px;
+        padding-block: 5px;
+    }
+
+    
+}
+
+@media (max-width:576px) {
+
+     .heading{
+        font-size: 26px;
+        line-height: 36px;
+        padding-block: 5px;
+    }
+    .sub-heading{
+        font-size: 20px;
+        margin-bottom: 5px;
+
+    }
+    .topcontent{
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 0px;
+    }
+
+  
+}
+
+
+.categories i{
+    font-size: 40px;
+    color: var(--para-color);
+}
+
+
+.icons{
+    height: 90px;
+    width: 90px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
 }
