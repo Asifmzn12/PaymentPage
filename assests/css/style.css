@@ -331,8 +331,15 @@ td {
     border: none;
     outline: none;
 }
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
 
-
+th, td {
+    border: 1px solid black; /* Adds a black border to table cells */
+    padding: 8px; /* Optional: Adds padding inside cells for better spacing */
+}
 @media (max-width:768px){
     .formsection{
         padding-inline: 10px;
@@ -363,7 +370,19 @@ td {
         line-height: 28px;
         margin-bottom: 0px;
     }
-
+    table {
+        border: none;
+        
+    }
+    
+    tr{
+        border-bottom: 1px solid rgb(202, 196, 196);
+    }
+    th, td {
+        border: none; /* Adds a black border to table cells */
+        padding: 8px; /* Optional: Adds padding inside cells for better spacing */
+    }
+  
   
 }
 
@@ -382,4 +401,33 @@ td {
     justify-content: center;
     align-items: center;
     border-radius: 50px;
+}
+
+
+#paymentTabs button{
+white-space: nowrap;
+margin-bottom: 5px;
+}
+
+
+.paymentcards img{
+    max-width: 55px;
+}
+
+.footer-bg{
+    background-image: url("/assests/images/our-solutions-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#paymentTabsContent{
+    max-width: 550px;
+}
+
+.card_cvv{
+    max-width: 35px;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
 }
