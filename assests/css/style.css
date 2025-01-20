@@ -1,3 +1,4 @@
+
 :root {
     --primary-color: #0a4bff;
     --para-color: #0042A6;
@@ -67,7 +68,7 @@ label {
 }
 
 .operatorLogo {
-    max-width: 30px;
+    max-width: 30px !important;
 }
 
 .customdropdown a {
@@ -202,6 +203,7 @@ sup {
 .categories a img {
     max-width: 35px;
 }
+
 
 .show {
     transition: all 0.5s ease;
